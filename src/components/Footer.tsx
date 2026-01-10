@@ -58,7 +58,7 @@ export function Footer() {
               <Button
                 size="lg"
                 variant="ghost"
-                    className="w-full justify-start bg-transparent hover:bg-transparent px-1 py-1 rounded-md text-[#ffffffb3]"
+                    className="w-full justify-start bg-transparent hover:bg-transparent px-5 py-5 rounded-md text-[#ffffffb3]"
                 asChild
               >
                 <a
