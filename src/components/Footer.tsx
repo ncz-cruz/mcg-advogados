@@ -66,13 +66,13 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-primary-foreground/50" />
-                <a href="mailto:contato@mcgadvogados.com.br" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                <a href="mailto:adv.goncalves@adv.oabsp.org.br" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
                   adv.goncalves@adv.oabsp.org.br
                 </a>
               </li>
                <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-primary-foreground/50" />
-                <a href="mailto:contato@mcgadvogados.com.br" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                <a href="mailto:celia.monteiro@adv.oabsp.org.br" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
                   celia.monteiro@adv.oabsp.org.br
                 </a>
               </li>

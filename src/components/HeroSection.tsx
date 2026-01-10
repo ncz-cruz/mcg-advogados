@@ -25,9 +25,6 @@ export function HeroSection() {
             
             <p className="text-lead mb-8 animate-fade-up" style={{ animationDelay: "0.2s" }}>
               Com mais de três décadas de atuação em diversos ramos do Direito, o Monteiro de Carvalho & Gonçalves (MCG Advogados) reúne experiência consolidada em prática contenciosa e consultiva. Formado em 2023 pela união profissional de José Luis Gonçalves e Célia Monteiro de Carvalho, o escritório presta serviços jurídicos estratégicos para clientes corporativos e pessoas físicas, com foco em soluções técnicas, gestão de risco e eficiência processual.
-            </p> </br>
-             <p className="text-lead mb-8 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-              Com mais de três décadas de atuação em diversos ramos do Direito, o Monteiro de Carvalho & Gonçalves (MCG Advogados) reúne experiência consolidada em prática contenciosa e consultiva. Formado em 2023 pela união profissional de José Luis Gonçalves e Célia Monteiro de Carvalho, o escritório presta serviços jurídicos estratégicos para clientes corporativos e pessoas físicas, com foco em soluções técnicas, gestão de risco e eficiência processual.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: "0.3s" }}>
