@@ -58,16 +58,16 @@ export function Footer() {
               <Button
                 size="lg"
                 variant="ghost"
-                className="w-full justify-start bg-transparent text-white hover:bg-transparent px-0"
+                    className="w-full justify-start bg-transparent hover:bg-transparent px-1 py-1 rounded-md text-[#ffffffb3]"
                 asChild
               >
                 <a
                   href="https://wa.me/5511964906809?text=Olá"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-white"
+                  className="flex items-center gap-2 text-[#ffffffb3]"
                 >
-                  <MessageCircle className="w-4 h-4 text-white/80 shrink-0" />
+                  <MessageCircle className="w-4 h-4 text-[#ffffffb3] shrink-0"  />
                   <span>(11) 96490-6809</span>
                 </a>
               </Button>
