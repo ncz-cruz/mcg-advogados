@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, MessageCircle, Phone } from "lucide-react";
+import { MessageCircle, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function CTASection() {
@@ -26,17 +26,12 @@ export function CTASection() {
                 Fale Conosco
               </Link>
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/90"
-              asChild
-            >
-              <a href="tel:+5511964906809">
-                <Phone className="mr-2 w-4 h-4" />
-                (11) 96490-06809
-              </a>
-            </Button>
+           <Button size="lg" variant="secondary" asChild>
+            <a href="tel:+5511964906809">
+              <Phone className="mr-2 w-4 h-4" />
+              (11) 96490-6809
+            </a>
+          </Button>
           </div>
         </div>
       </div>

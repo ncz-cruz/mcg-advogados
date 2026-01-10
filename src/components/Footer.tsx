@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
-import { Scale, Facebook, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { Scale, Facebook, Instagram, Linkedin, Mail, MapPin } from "lucide-react";
+import { MessageCircle, Phone } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export function Footer() {
   return (
@@ -59,11 +61,17 @@ export function Footer() {
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="w-4 h-4 text-primary-foreground/50" />
-                <a href="tel:+5511964906809" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-                  (11) 96490-06809
+               <Button size="lg" variant="secondary" asChild>
+                <a 
+                  href="https://wa.me/5511964906809?text=Olá" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  <MessageCircle className="mr-2 w-4 h-4" /> 
+                  (11) 96490-6809
                 </a>
-              </li>
+              </Button>
+            </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-primary-foreground/50" />
                 <a href="mailto:adv.goncalves@adv.oabsp.org.br" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
@@ -83,15 +91,6 @@ export function Footer() {
           <div>
             <h4 className="font-heading text-base font-semibold mb-4">Redes Sociais</h4>
             <div className="flex items-center gap-4">
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary/30 transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-4 h-4" />
-              </a>
               <a
                 href="https://www.instagram.com/mcg.advogados.esc?igsh=NzgyZmo5Znk4YWth"
                 target="_blank"

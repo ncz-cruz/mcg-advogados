@@ -8,13 +8,13 @@ const teamMembers = [
     role: "Sócio Fundador",
     image: joseLuisImage,
     description: "Atuou voluntariamente por anos como Coordenador de Prerrogativas da Seccional Paulista da OAB; foi Vice Presidente da Assistência Judiciária da 39ª Subseção da OAB, onde cumulou também os cargos de Ouvidor, membro da Comissão de Informática Jurídica e integrante da Comissão de Prerrogativas. E quando a defesa dos seus direitos exige firmeza, a combatividade do Dr. José Luis Gonçalves se sobressai. Incansável na busca pela justiça, ele atua com determinação e tenacidade, não hesitando em lutar por cada causa com a paixão e o rigor necessários para proteger os interesses de quem confia no MCG Advogados.",
-    specialties: ["Direito Cível", "Direito Empresarial", "Prerrogativas"],
+    specialties: ["Direito Criminal", "Direito Empresarial", "Prerrogativas"],
   },
   {
     name: "Dra. Célia Monteiro de Carvalho",
     role: "Sócia Fundadora",
     image: celiaImage,
-    description: "Sócia fundadora do escritório Monteiro de Carvalho & Gonçalves - MCG Advogados com atuação destacada há mais de uma década no cenário jurídico. Graduada em Direito desde 2011, é especialista em Direito Condominial, área na qual possui ampla experiência, assessorando síndicos, administradoras e condôminos em questões administrativas e judiciais complexas. Além de sua expertise condominial, atua também com excelência nas áreas de Direito Cível e Direito de Família, oferecendo uma assessoria jurídica integrada e estratégica. À frente do escritório, em parceria com o Dr. José Luis Gonçalves, lidera uma equipe comprometida com a ética, a transparência e a busca por soluções personalizadas e eficazes para cada cliente.",
+    description: "Atuação destacada há mais de uma década no cenário jurídico, e graduada em Direito desde 2011, é especialista em Direito Condominial, área na qual possui ampla experiência, assessorando síndicos, administradoras e condôminos em questões administrativas e judiciais complexas. Além de sua expertise condominial, atua também com excelência nas áreas de Direito Cível e Direito de Família, oferecendo uma assessoria jurídica integrada e estratégica.",
     specialties: ["Direito Condominial", "Direito Cível", "Direito de Família"],
   },
 ];
