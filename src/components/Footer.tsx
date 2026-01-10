@@ -54,24 +54,25 @@ export function Footer() {
           <div>
             <h4 className="font-heading text-base font-semibold mb-4">Contato</h4>
             <ul className="space-y-3">
-              <li className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 mt-0.5 text-primary-foreground/50 shrink-0" />
-                <span className="text-sm text-primary-foreground/70">
-                  São Paulo, SP
-                </span>
-              </li>
-              <li className="text-sm text-primary-foreground/70">
-               <Button size="lg" variant="secondary" asChild>
-                <a 
-                  href="https://wa.me/5511964906809?text=Olá" 
-                  target="_blank" 
+            <li className="text-sm text-primary-foreground/70">
+              <Button
+                size="lg"
+                variant="ghost"
+                className="w-full justify-start bg-transparent text-white hover:bg-transparent px-0"
+                asChild
+              >
+                <a
+                  href="https://wa.me/5511964906809?text=Olá"
+                  target="_blank"
                   rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-white"
                 >
-                  <MessageCircle className="w-4 h-4 mt-0.5 text-primary-foreground/50 shrink-0" /> 
-                  (11) 96490-6809
+                  <MessageCircle className="w-4 h-4 text-white/80 shrink-0" />
+                  <span>(11) 96490-6809</span>
                 </a>
               </Button>
             </li>
+
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-primary-foreground/50" />
                 <a href="mailto:adv.goncalves@adv.oabsp.org.br" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
