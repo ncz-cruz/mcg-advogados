@@ -1,6 +1,6 @@
-import { Users, Briefcase, GraduationCap } from "lucide-react";
-import joseLuisImage from "@/assets/jose-luis.jpg";
-import celiaImage from "@/assets/celia-monteiro.jpeg";
+import { Users, Briefcase } from "lucide-react";
+import joseLuisImage from "@/assets/jose-luis.png";
+import celiaImage from "@/assets/celia-monteiro.png";
 
 const teamMembers = [
   {

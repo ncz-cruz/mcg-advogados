@@ -1,5 +1,5 @@
 import { Award, Star, Trophy } from "lucide-react";
-import awardImage from "@/assets/award-ceremony.jpg";
+import awardImage from "@/assets/award-ceremony.jpeg";
 
 export function RecognitionSection() {
   return (

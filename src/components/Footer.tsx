@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { Scale, Facebook, Instagram, Linkedin, Mail, MapPin } from "lucide-react";
-import { MessageCircle, Phone } from "lucide-react";
+import { Scale, Instagram, Linkedin, Mail, MapPin } from "lucide-react";
+import { MessageCircle, } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function Footer() {
