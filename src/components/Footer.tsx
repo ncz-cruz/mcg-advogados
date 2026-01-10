@@ -54,11 +54,23 @@ export function Footer() {
           <div>
             <h4 className="font-heading text-base font-semibold mb-4">Contato</h4>
             <ul className="space-y-3">
+              <li className="flex items-center gap-3">
+                <Mail className="w-4 h-4 text-primary-foreground/50" />
+                <a href="mailto:adv.goncalves@adv.oabsp.org.br" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                  adv.goncalves@adv.oabsp.org.br
+                </a>
+              </li>
+               <li className="flex items-center gap-3">
+                <Mail className="w-4 h-4 text-primary-foreground/50" />
+                <a href="mailto:celia.monteiro@adv.oabsp.org.br" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                  celia.monteiro@adv.oabsp.org.br
+                </a>
+              </li>
             <li className="text-sm text-primary-foreground/70">
               <Button
                 size="lg"
                 variant="ghost"
-                    className="w-full justify-start bg-transparent hover:bg-transparent px-1 py-15 rounded-md text-[#ffffffb3]"
+                    className="w-full justify-start bg-transparent hover:bg-transparent px-0 py-15 rounded-md text-[#ffffffb3]"
                 asChild
               >
                 <a
@@ -72,19 +84,6 @@ export function Footer() {
                 </a>
               </Button>
             </li>
-
-              <li className="flex items-center gap-3">
-                <Mail className="w-4 h-4 text-primary-foreground/50" />
-                <a href="mailto:adv.goncalves@adv.oabsp.org.br" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-                  adv.goncalves@adv.oabsp.org.br
-                </a>
-              </li>
-               <li className="flex items-center gap-3">
-                <Mail className="w-4 h-4 text-primary-foreground/50" />
-                <a href="mailto:celia.monteiro@adv.oabsp.org.br" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-                  celia.monteiro@adv.oabsp.org.br
-                </a>
-              </li>
             </ul>
           </div>
 
