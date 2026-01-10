@@ -12,7 +12,7 @@ export function RecognitionSection() {
             <img
               src={awardImage}
               alt="Cerimônia de premiação - Dr. José Luis Gonçalves recebendo o prêmio Advogado do Ano"
-              className="relative w-full h-auto rounded-2xl shadow-card object-cover aspect-[4/3]"
+              className="relative w-full h-auto rounded-2xl shadow-card object-cover aspect-[2/3]"
               loading="lazy"
             />
           </div>

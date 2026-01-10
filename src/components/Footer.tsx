@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Scale, Instagram, Linkedin, Mail, MapPin } from "lucide-react";
-import { MessageCircle, } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function Footer() {
@@ -60,14 +60,14 @@ export function Footer() {
                   São Paulo, SP
                 </span>
               </li>
-              <li className="flex items-center gap-3">
+              <li className="text-sm text-primary-foreground/70">
                <Button size="lg" variant="secondary" asChild>
                 <a 
                   href="https://wa.me/5511964906809?text=Olá" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
-                  <MessageCircle className="mr-2 w-4 h-4" /> 
+                  <MessageCircle className="w-4 h-4 mt-0.5 text-primary-foreground/50 shrink-0" /> 
                   (11) 96490-6809
                 </a>
               </Button>
@@ -92,7 +92,7 @@ export function Footer() {
             <h4 className="font-heading text-base font-semibold mb-4">Redes Sociais</h4>
             <div className="flex items-center gap-4">
               <a
-                href="https://www.instagram.com/mcg.advogados.esc?igsh=NzgyZmo5Znk4YWth"
+               href="https://www.instagram.com/mcg.advogados.esc?igsh=NzgyZmo5Znk4YWth"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary/30 transition-colors"
@@ -101,7 +101,7 @@ export function Footer() {
                 <Instagram className="w-4 h-4" />
               </a>
               <a
-                href="https://www.linkedin.com/in/celia-monteiro-de-carvalho/"
+               href="https://www.linkedin.com/in/celia-monteiro-de-carvalho/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary/30 transition-colors"
@@ -109,6 +109,7 @@ export function Footer() {
               >
                 <Linkedin className="w-4 h-4" />
               </a>
+              
             </div>
           </div>
         </div>

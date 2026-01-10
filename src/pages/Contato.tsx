@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -8,6 +8,8 @@ import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
 import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
+import emailjs from "@emailjs/browser";
+
 import { z } from "zod";
 
 const contactSchema = z.object({
@@ -17,6 +19,9 @@ const contactSchema = z.object({
   mensagem: z.string().trim().min(10, "Mensagem deve ter pelo menos 10 caracteres").max(1000, "Mensagem muito longa"),
   consentimento: z.boolean().refine((val) => val === true, "Você deve aceitar a política de privacidade"),
 });
+const SERVICE_ID = "mcg-site";
+const TEMPLATE_ID = "fale-conosco";
+const PUBLIC_KEY = "cnyB9Gwl72u--dt03";
 
 const Contato = () => {
   const { toast } = useToast();
@@ -29,6 +34,11 @@ const Contato = () => {
     consentimento: false,
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
+
+   useEffect(() => {
+    // inicializa EmailJS com a chave pública
+    if (PUBLIC_KEY) emailjs.init(PUBLIC_KEY);
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -44,8 +54,20 @@ const Contato = () => {
     setErrors({});
 
     try {
+      // valida localmente com Zod
       contactSchema.parse(formData);
-      
+
+      // monta os parâmetros que serão usados no template do EmailJS
+      const templateParams = {
+        nome: formData.nome,
+        email: formData.email,
+        telefone: formData.telefone,
+        mensagem: formData.mensagem,
+        consentimento: formData.consentimento ? "Sim" : "Não",
+      };
+
+      // envia via EmailJS (front-end)
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams);
       // Simulate form submission
       await new Promise((resolve) => setTimeout(resolve, 1000));
       
@@ -55,12 +77,13 @@ const Contato = () => {
       });
       
       setFormData({
-        nome: "",
+        nome: formData.nome,
         email: "",
         telefone: "",
         mensagem: "",
         consentimento: false,
       });
+      
     } catch (error) {
       if (error instanceof z.ZodError) {
         const newErrors: Record<string, string> = {};
