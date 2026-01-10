@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
-import { Scale, Instagram, Linkedin, Mail, MapPin } from "lucide-react";
-import { MessageCircle } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Scale, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -54,6 +52,18 @@ export function Footer() {
           <div>
             <h4 className="font-heading text-base font-semibold mb-4">Contato</h4>
             <ul className="space-y-3">
+               <li className="flex items-start gap-3">
+                <MapPin className="w-4 h-4 mt-0.5 text-primary-foreground/50 shrink-0" />
+                <span className="text-sm text-primary-foreground/70">
+                  São Bernardo do Campo, SP
+                </span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Phone className="w-4 h-4 text-primary-foreground/50" />
+                <a href="tel:+5511964906809" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                  (11) 96490-6809
+                </a>
+              </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-primary-foreground/50" />
                 <a href="mailto:adv.goncalves@adv.oabsp.org.br" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
@@ -66,24 +76,6 @@ export function Footer() {
                   celia.monteiro@adv.oabsp.org.br
                 </a>
               </li>
-            <li className="text-sm text-primary-foreground/70">
-              <Button
-                size="lg"
-                variant="ghost"
-                    className="w-full justify-start bg-transparent hover:bg-transparent px-0 py-15 rounded-md text-[#ffffffb3]"
-                asChild
-              >
-                <a
-                  href="https://wa.me/5511964906809?text=Olá"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-[#ffffffb3]"
-                >
-                  <MessageCircle className="w-4 h-4 text-[#ffffffb3] shrink-0"  />
-                  <span>(11) 96490-6809</span>
-                </a>
-              </Button>
-            </li>
             </ul>
           </div>
 
