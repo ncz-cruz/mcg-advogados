@@ -1,6 +1,6 @@
-import { Users, Briefcase } from "lucide-react";
+import { Users } from "lucide-react";
 import joseLuisImage from "@/assets/jose-luis.png";
-import celiaImage from "@/assets/celia-monteiro.png";
+import celiaImage from "@/assets/celia-monteiro.jpeg";
 
 const teamMembers = [
   {
@@ -8,14 +8,12 @@ const teamMembers = [
     role: "Sócio Fundador",
     image: joseLuisImage,
     description: "Atuou voluntariamente por anos como Coordenador de Prerrogativas da Seccional Paulista da OAB; foi Vice Presidente da Assistência Judiciária da 39ª Subseção da OAB, onde cumulou também os cargos de Ouvidor, membro da Comissão de Informática Jurídica e integrante da Comissão de Prerrogativas. E quando a defesa dos seus direitos exige firmeza, a combatividade do Dr. José Luis Gonçalves se sobressai. Incansável na busca pela justiça, ele atua com determinação e tenacidade, não hesitando em lutar por cada causa com a paixão e o rigor necessários para proteger os interesses de quem confia no MCG Advogados.",
-    specialties: ["Direito Criminal", "Direito Empresarial", "Prerrogativas"],
   },
   {
     name: "Dra. Célia Monteiro de Carvalho",
     role: "Sócia Fundadora",
     image: celiaImage,
-    description: "Atuação destacada há mais de uma década no cenário jurídico, e graduada em Direito desde 2011, é especialista em Direito Condominial, área na qual possui ampla experiência, assessorando síndicos, administradoras e condôminos em questões administrativas e judiciais complexas. Além de sua expertise condominial, atua também com excelência nas áreas de Direito Cível e Direito de Família, oferecendo uma assessoria jurídica integrada e estratégica.",
-    specialties: ["Direito Condominial", "Direito Cível", "Direito de Família"],
+    description: "Com atuação destacada há mais de uma década no cenário jurídico, é graduada em Direito desde 2011, acumulando sólida experiência na assessoria jurídica estratégica e na condução de demandas administrativas e judiciais. Ao longo de sua trajetória profissional, desenvolveu atuação consistente pautada na análise técnica criteriosa, na interpretação responsável do ordenamento jurídico e na prevenção de riscos, sempre orientada pela ética, pela responsabilidade e pelo compromisso profissional. Atua de forma estratégica e personalizada, com foco na segurança jurídica, na organização de processos decisórios e na construção de soluções jurídicas estáveis, contribuindo para decisões conscientes e juridicamente estruturadas.",
   },
 ];
 
@@ -62,19 +60,6 @@ export function TeamSection() {
                 <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                   {member.description}
                 </p>
-
-                {/* Specialties */}
-                <div className="flex flex-wrap gap-2">
-                  {member.specialties.map((specialty) => (
-                    <span
-                      key={specialty}
-                      className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary text-secondary-foreground text-xs font-medium"
-                    >
-                      <Briefcase className="w-3 h-3" />
-                      {specialty}
-                    </span>
-                  ))}
-                </div>
               </div>
             </div>
           </article>

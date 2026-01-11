@@ -1,9 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { CTASection } from "@/components/CTASection";
-import { Home, Users, Building, Briefcase, FileText, Scale } from "lucide-react";
-import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
+import { Home, Users, Building, Briefcase, FileText, Scale, ShieldCheck, Landmark, Handshake } from "lucide-react";
 
 const practiceAreas = [
   {
@@ -41,6 +39,24 @@ const practiceAreas = [
     title: "Consultoria Preventiva",
     description: "Orientação jurídica estratégica para evitar litígios e proteger seus interesses de forma proativa.",
     topics: ["Análise de riscos", "Pareceres jurídicos", "Compliance", "Orientação legal"],
+  },
+  {
+    icon: ShieldCheck,
+    title: "Ética Profissional",
+    description: "Atuação na defesa de profissionais em processos ético-disciplinares perante conselhos e órgãos de classe, com acompanhamento técnico e estratégico em todas as fases do procedimento.",
+    topics: ["Defesa em processos ético-disciplinares", "Atuação perante a OAB", "Atuação perante o Conselho Regional de Medicina (CRM)", "Atuação perante o CRECI"],
+  },
+   {
+    icon: Landmark,
+    title: "Direito Criminal",
+    description: "Atuação na defesa técnica e estratégica em demandas criminais, com acompanhamento jurídico responsável em todas as fases do procedimento, assegurando os direitos e garantias legais do assistido.",
+    topics: ["Defesa em inquéritos policiais", "Atuação em ações penais", "Acompanhamento em audiências e atos processuais", "Elaboração de peças defensivas"],
+  },
+  {
+    icon: Handshake,
+    title: "Atuação Sindical",
+    description: "Atuação jurídica na assessoria e representação de entidades sindicais e associativas, com foco em consultoria preventiva, segurança jurídica institucional e condução de demandas administrativas e judiciais.",
+    topics: ["Assessoria jurídica a sindicatos e associações", "Consultoria preventiva e pareceres jurídicos", "Atuação administrativa e judicial", "Apoio jurídico a demandas institucionais"],
   },
 ];
 

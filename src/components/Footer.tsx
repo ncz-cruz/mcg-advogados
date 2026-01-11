@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Scale, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { Scale, Instagram, Mail, Phone, MapPin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -92,16 +92,6 @@ export function Footer() {
               >
                 <Instagram className="w-4 h-4" />
               </a>
-              <a
-               href="https://www.linkedin.com/in/celia-monteiro-de-carvalho/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary/30 transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-4 h-4" />
-              </a>
-              
             </div>
           </div>
         </div>
