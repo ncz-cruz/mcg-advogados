@@ -1,60 +1,83 @@
-# Welcome to your Lovable project
+Markdown
 
-## Project info
+# MCG Advogados - Website Institucional
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Este é o repositório do website oficial do escritório **Monteiro de Carvalho & Gonçalves Advogados Associados (MCG Advogados)**. O projeto é uma Single Page Application (SPA) moderna, desenvolvida para apresentar as áreas de atuação, a equipe e fornecer canais de contato com o escritório.
 
-## How can I edit this code?
+## 🚀 Tecnologias Utilizadas
 
-There are several ways of editing your application.
+O projeto foi construído utilizando as seguintes tecnologias principais:
 
-**Use your preferred IDE**
+- **[React](https://react.dev/)**: Biblioteca JavaScript para construção da interface.
+- **[TypeScript](https://www.typescriptlang.org/)**: Superset do JavaScript que adiciona tipagem estática.
+- **[Vite](https://vitejs.dev/)**: Build tool rápida para desenvolvimento web moderno.
+- **[Tailwind CSS](https://tailwindcss.com/)**: Framework CSS utilitário para estilização.
+- **[Shadcn UI](https://ui.shadcn.com/)**: Coleção de componentes de interface reutilizáveis (baseados em Radix UI).
+- **[React Router DOM](https://reactrouter.com/)**: Gerenciamento de rotas da aplicação.
+- **[React Hook Form](https://react-hook-form.com/)** + **[Zod](https://zod.dev/)**: Gerenciamento e validação de formulários.
+- **[Lucide React](https://lucide.dev/)**: Biblioteca de ícones.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📋 Pré-requisitos
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Antes de começar, certifique-se de ter instalado em sua máquina:
+- [Node.js](https://nodejs.org/) (versão 20 ou superior recomendada)
+- Gerenciador de pacotes (`npm`, `yarn` ou `bun`)
 
-Follow these steps:
+## 🔧 Instalação e Execução
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Siga os passos abaixo para rodar o projeto em seu ambiente local:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+1. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/ncz-cruz/mcg-advogados.git](https://github.com/ncz-cruz/mcg-advogados.git)
+   cd mcg-advogados
+Instale as dependências:
 
-# Step 3: Install the necessary dependencies.
-npm i
+Bash
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+npm install
+# ou
+bun install
+Inicie o servidor de desenvolvimento:
+
+Bash
+
 npm run dev
-```
+# ou
+bun dev
+Acesse a aplicação: O terminal mostrará o endereço local, geralmente http://localhost:8080 (conforme configurado no vite.config.ts).
 
-**Edit a file directly in GitHub**
+📦 Build para Produção
+Para gerar a versão otimizada para produção:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Execute o comando de build:
 
-**Use GitHub Codespaces**
+Bash
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+npm run build
+Os arquivos estáticos serão gerados na pasta dist/. Esses arquivos estão prontos para serem hospedados em plataformas como Vercel, Netlify ou qualquer servidor estático.
 
-## What technologies are used for this project?
+Para visualizar a versão de produção localmente:
 
-This project is built with:
+Bash
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+npm run preview
+📂 Estrutura do Projeto
+src/components: Componentes reutilizáveis (Header, Footer, seções da Home e componentes de UI).
 
-## How can I deploy this project?
+src/pages: Páginas principais da aplicação (Início, Atuação, Contato).
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+src/assets: Imagens e recursos estáticos.
 
+src/lib: Utilitários (configuração do Tailwind merge, etc).
+
+src/hooks: Hooks customizados (ex: toast).
+
+📝 Scripts Disponíveis
+dev: Inicia o servidor de desenvolvimento.
+
+build: Compila o projeto para produção.
+
+lint: Executa o ESLint para verificar problemas no código.
+
+preview: Visualiza o build de produção localmente.

@@ -1,6 +1,6 @@
 import { Users } from "lucide-react";
 import joseLuisImage from "@/assets/jose-luis.png";
-import celiaImage from "@/assets/celia-monteiro.jpeg";
+import celiaImage from "@/assets/celia-monteiro.png";
 
 const teamMembers = [
   {
@@ -13,7 +13,7 @@ const teamMembers = [
     name: "Dra. Célia Monteiro de Carvalho",
     role: "Sócia Fundadora",
     image: celiaImage,
-    description: "Com atuação destacada há mais de uma década no cenário jurídico, é graduada em Direito desde 2011, acumulando sólida experiência na assessoria jurídica estratégica e na condução de demandas administrativas e judiciais. Ao longo de sua trajetória profissional, desenvolveu atuação consistente pautada na análise técnica criteriosa, na interpretação responsável do ordenamento jurídico e na prevenção de riscos, sempre orientada pela ética, pela responsabilidade e pelo compromisso profissional. Atua de forma estratégica e personalizada, com foco na segurança jurídica, na organização de processos decisórios e na construção de soluções jurídicas estáveis, contribuindo para decisões conscientes e juridicamente estruturadas.",
+    description: "Com atuação destacada há mais de uma década no cenário jurídico, é graduada em Direito desde 2011, acumulando sólida experiência na assessoria jurídica estratégica e na condução de demandas administrativas e judiciais. Ao longo de sua trajetória profissional, desenvolveu atuação consistente pautada na análise técnica criteriosa, na interpretação responsável do ordenamento jurídico e na prevenção de riscos, sempre orientada pela ética, pela responsabilidade e pelo compromisso profissional.",
   },
 ];
 
