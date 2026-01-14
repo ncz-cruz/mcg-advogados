@@ -84,7 +84,7 @@ export function Footer() {
             <h4 className="font-heading text-base font-semibold mb-4">Redes Sociais</h4>
             <div className="flex items-center gap-4">
               <a
-               href="https://www.instagram.com/mcg.advogados.esc?igsh=NzgyZmo5Znk4YWth"
+               href="https://www.instagram.com/mcg.advogados.esc/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary/30 transition-colors"
