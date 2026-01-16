@@ -31,10 +31,6 @@ export function HeroSection() {
               O escritório iniciou suas atividades sob a denominação GoLAW, consolidando sua atuação ao longo dos anos. Em 2023, com a reorganização societária e a integração das trajetórias profissionais de José Luis Gonçalves e da Dra. Célia Monteiro de Carvalho, passou a operar sob a atual razão social Monteiro de Carvalho & Gonçalves, refletindo o fortalecimento institucional e a ampliação estratégica da atuação.
             </p>
 
-            <p className="text-lead mb-8 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-              Prestamos serviços jurídicos a clientes corporativos e pessoas físicas, com foco em soluções técnicas, gestão de riscos e eficiência processual.  
-            </p>
-
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: "0.3s" }}>
               <Button size="lg" asChild>
                 <Link to="/contato">
